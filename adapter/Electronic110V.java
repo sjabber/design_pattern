@@ -1,4 +1,5 @@
 public interface Electronic110V {
   
-  void power
+  void powerOn();
+  
 }
