@@ -1,4 +1,6 @@
-class Main {
+package com.company.design.adapter;
+
+public class Main {
   public static void main(String[] args) {
     
     // 110V 헤어드라이기

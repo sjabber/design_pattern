@@ -1,7 +1,3 @@
-AirConditioner.class
-HairDryer.class
-SocketAdapter.class
-Cleaner.class
-Main.class
-Electronic110V.class
-Electronic220V.class
+.idea
+out
+design.iml

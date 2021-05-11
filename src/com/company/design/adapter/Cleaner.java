@@ -1,3 +1,7 @@
+package com.company.design.adapter;
+
+import com.company.design.adapter.Electronic220V;
+
 public class Cleaner implements Electronic220V {
   
   @Override
