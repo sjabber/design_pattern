@@ -1,9 +1,9 @@
 package com.company.design.aop;
 
 import com.company.design.proxy.Html;
-import com.company.design.proxy.IBrower;
+import com.company.design.proxy.IBrowser;
 
-public class AopBrowser implements IBrower {
+public class AopBrowser implements IBrowser {
 
     // AOP의 특징중에는 전후 메소드라는 것이 있다.
     private String url;

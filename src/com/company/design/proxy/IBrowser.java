@@ -1,5 +1,5 @@
 package com.company.design.proxy;
 
-public interface IBrower {
+public interface IBrowser {
     Html show();
 }

@@ -6,22 +6,24 @@ import java.util.concurrent.atomic.AtomicLong;
 
 public class Main {
     public static void main(String[] args) {
-        /* 캐시 미적용
+
+        // 캐시 미적용
         Browser browser = new Browser("www.naver.com");
         browser.show();
         browser.show();
         browser.show();
         browser.show();
 
-
         // 캐시 적용
-        IBrower browser = new BrowserProxy("www.naver.com");
-        browser.show();
-        browser.show();
-        browser.show();
-        browser.show();
-        */
+        IBrowser browser2 = new BrowserProxy("www.naver.com");
+        browser2.show();
+        browser2.show();
+        browser2.show();
+        browser2.show();
 
+        System.out.println();
+        System.out.println("------------------------------------------------");
+        System.out.println();
 
         // AOP
         // => 특정한 메소드가 있으면 이 메소드의 실행시간이나 특정 패키지안의 메소드들의 실행시간
@@ -33,7 +35,7 @@ public class Main {
         AtomicLong start = new AtomicLong();
         AtomicLong end = new AtomicLong();
 
-        IBrower aopBrowser = new AopBrowser("www.naver.com",
+        IBrowser aopBrowser = new AopBrowser("www.naver.com",
                 // 람다식 표현
                 ()-> {
                     System.out.println("before");
@@ -47,6 +49,10 @@ public class Main {
 
         aopBrowser.show();
         System.out.println("loading time : " + end.get());
+
+        System.out.println();
+        System.out.println("----------------------------------");
+        System.out.println();
 
         aopBrowser.show();
         System.out.println("loading time : " + end.get());
